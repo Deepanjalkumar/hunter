@@ -10,7 +10,7 @@ def emailfinder_domain(domain, api, output):
                     file.writelines("%s\n" %(data[i]["value"]))
                     print("%s\n" %(data[i]["value"]))
                 except Exception as e:
-                    pass
+                    print(e)
     except Exception as e:
         print("API KEY RUN OUT OF CREDITS")
 
